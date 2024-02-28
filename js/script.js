@@ -35,21 +35,23 @@
     render();
   };
 
+  const onFormSubmit = (event) => {
+    event.preventDefault();
+
+    const newTask = document.querySelector(".js-newTask").value.trim();
+
+    if (newTask === "") {
+      return;
+    }
+    addNewTask(newTask);
+  };
+
   const init = () => {
     render();
 
     const form = document.querySelector(".js-form");
 
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-
-      const newTask = document.querySelector(".js-newTask").value.trim();
-
-      if (newTask === "") {
-        return;
-      }
-      addNewTask(newTask);
-    });
+    form.addEventListener("submit", onFormSubmit);
   };
 
   init();

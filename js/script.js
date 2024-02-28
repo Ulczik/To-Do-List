@@ -18,8 +18,10 @@
 
     for (const task of tasks) {
       tasksListContent += `
-     <li>
-     ${task.content}
+     <li 
+     <span
+      class="list__item${task.done ? " list__item--done" : ""}">${task.content}
+     </span>
      </li>
       `;
     }
@@ -29,6 +31,8 @@
 
   const init = () => {
     render();
+
+    const form = document.querySelector(".js-form");
   };
 
   init();

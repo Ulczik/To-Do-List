@@ -13,26 +13,43 @@
 
   let hideDoneTasks = false;
 
+  const addNewTask = (newTask) => {
+    tasks.push({ content: newTask });
+
+    render();
+  };
+
+  removeTask = (taskIndex) => {
+    tasks.splice(taskIndex, 1);
+    render();
+  };
+
   const render = () => {
     let tasksListContent = "";
 
     for (const task of tasks) {
       tasksListContent += `
      <li 
-     <span
-      class="list__item${task.done ? " list__item--done" : ""}">${task.content}
-     </span>
+      class="list__item${task.done ? " list__item--done" : ""}">
+      <span>
+        ${task.content}
+      </span>
+      <button class="list__button list__button--remove js-remove">
+        🗑
+      </button>
      </li>
       `;
     }
 
     document.querySelector(".js-tasks").innerHTML = tasksListContent;
-  };
 
-  const addNewTask = (newTask) => {
-    tasks.push({ content: newTask });
+    const removeButtons = document.querySelectorAll(".js-remove");
 
-    render();
+    removeButtons.forEach((removeButon, index) => {
+      removeButon.addEventListener("click", () => {
+        removeTask(index);
+      });
+    });
   };
 
   const onFormSubmit = (event) => {

@@ -12,4 +12,5 @@ html {
   background-color: #eee;
   font-family: "Montserrat", sans-serif;
   max-height: 100%;
+  overflow-wrap: anywhere;
 }

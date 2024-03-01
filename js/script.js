@@ -1,15 +1,5 @@
 {
-  let tasks = [
-    {
-      content: "tra la la",
-      done: true,
-    },
-
-    {
-      content: "bla bla",
-      done: false,
-    },
-  ];
+  let tasks = [];
 
   let hideDoneTasks = false;
 
@@ -55,7 +45,7 @@
      <li 
       class="list__item${task.done ? " list__item--done" : ""}">
       <button class="list__button list__button--toggleDone js-toggleDone">
-        zrobione?
+        ${task.done ? "✓" : ""}
       </button>
       <span>
         ${task.content}

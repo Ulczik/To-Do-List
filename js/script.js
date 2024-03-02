@@ -65,12 +65,16 @@
   const onFormSubmit = (event) => {
     event.preventDefault();
 
+    const newImput = document.querySelector(".js-newTask");
     const newTask = document.querySelector(".js-newTask").value.trim();
 
     if (newTask === "") {
+      newImput.focus();
       return;
     }
     addNewTask(newTask);
+    newImput.value = "";
+    newImput.focus;
   };
 
   const init = () => {

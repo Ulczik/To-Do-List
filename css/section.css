@@ -23,19 +23,3 @@
 .section__container {
   padding: 20px;
 }
-
-.form__button {
-  color: white;
-  background-color: teal;
-  border: none;
-  padding: 15px;
-}
-
-.form__button:hover {
-  cursor: pointer;
-  background-color: hsl(180, 100%, 30%);
-}
-
-.form__button:active {
-  background-color: hsl(180, 100%, 35%);
-}

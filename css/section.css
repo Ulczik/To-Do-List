@@ -4,10 +4,6 @@
   margin: 15px 0;
 }
 
-.section__contaianer {
-  padding: 20px;
-}
-
 .section__header {
   display: grid;
   grid-template-columns: auto auto;
@@ -22,4 +18,24 @@
   .section__header {
     grid-template-columns: 1fr;
   }
+}
+
+.section__container {
+  padding: 20px;
+}
+
+.form__button {
+  color: white;
+  background-color: teal;
+  border: none;
+  padding: 15px;
+}
+
+.form__button:hover {
+  cursor: pointer;
+  background-color: hsl(180, 100%, 30%);
+}
+
+.form__button:active {
+  background-color: hsl(180, 100%, 35%);
 }

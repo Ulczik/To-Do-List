@@ -2,7 +2,7 @@
 This repository presents **handy check list**.
 
 ## Demo
-[https://ulczik.github.io/toDoList/](https://github.com/Ulczik/To-Do-List/settings/pages)
+ https://ulczik.github.io/To-Do-List/
 
 ## Description
 Now you wont forget what you have to do with this simple tasks list.

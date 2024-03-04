@@ -42,8 +42,7 @@
 
     for (const task of tasks) {
       tasksListContent += `
-       <li 
-        class="list__item">
+       <li class="list__item">
          <button class="list__button list__button--toggleDone js-toggleDone">
            ${task.done ? "✓" : ""}
          </button>

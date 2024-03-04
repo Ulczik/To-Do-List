@@ -20,6 +20,7 @@
   background-color: teal;
   border: none;
   padding: 15px;
+  transition: 0.5s linear;
 }
 
 .form__button:hover {

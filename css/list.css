@@ -24,6 +24,7 @@
   height: 30px;
   padding: 0;
   cursor: pointer;
+  transition: background 0.5s;
 }
 
 .list__button--toggleDone {

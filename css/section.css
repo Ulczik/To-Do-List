@@ -4,6 +4,11 @@
   margin: 15px 0;
 }
 
+.section__title {
+  margin: 0;
+  font-size: 20px;
+}
+
 .section__header {
   display: grid;
   grid-template-columns: auto auto;
@@ -12,7 +17,6 @@
   align-items: center;
   padding: 20px;
   border-bottom: 1px solid #eee;
-  margin: 0;
 }
 
 @media (maxwidth: 767px) {
